@@ -1,0 +1,22 @@
+{
+  "name": "chainfile-foundry",
+  "version": "0.0.0",
+  "private": false,
+  "repository": {
+    "url": "git+https://github.com/vetumorg/chainfile-foundry"
+  },
+  "license": "MPL-2.0",
+  "files": [
+    "*.json"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "@workspace/jest"
+  },
+  "devDependencies": {
+    "@chainfile/testcontainers": "^0.8.0"
+  }
+}

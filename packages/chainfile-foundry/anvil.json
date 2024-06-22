@@ -1,0 +1,41 @@
+{
+  "$schema": "https://chainfile.org/schema.json",
+  "caip2": "eip155:1337",
+  "name": "Anvil",
+  "description": "Foundry Anvil: Local Ethereum node, akin to Ganache, Hardhat Network.",
+  "params": {
+    "version": {
+      "default": "nightly"
+    }
+  },
+  "containers": {
+    "anvil": {
+      "image": "ghcr.io/foundry-rs/foundry",
+      "tag": {
+        "$param": "version"
+      },
+      "source": "https://github.com/foundry-rs/foundry",
+      "resources": {
+        "cpu": 0.25,
+        "memory": 256
+      },
+      "endpoints": {
+        "rpc": {
+          "port": 8545,
+          "protocol": "HTTP JSON-RPC 2.0",
+          "probes": {
+            "readiness": {
+              "params": [],
+              "method": "eth_blockNumber",
+              "match": {
+                "result": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

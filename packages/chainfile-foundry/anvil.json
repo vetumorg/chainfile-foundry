@@ -15,6 +15,7 @@
         "$param": "version"
       },
       "source": "https://github.com/foundry-rs/foundry",
+      "command": ["anvil", "--host", "0.0.0.0"],
       "resources": {
         "cpu": 0.25,
         "memory": 256

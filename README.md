@@ -1,10 +1,10 @@
-# Chainfile Anvil
+# Chainfile Foundry
 
 Part of the [Chainfile](https://chainfile.org) ecosystem.
 
 ## `foundry-testcontainers`
 
-This is a standalone testcontainers-node package for running Anvil in a container for testing purposes.
+This is a standalone testcontainers-node package for running foundry in a container for testing purposes.
 You don't need to use the Chainfile ecosystem to use this package.
 
 ```shell

@@ -9,7 +9,7 @@ importers:
   .:
     devDependencies:
       '@types/node':
-        specifier: ^20.14.2
+        specifier: ^20.14.7
         version: 20.14.7
       '@workspace/eslint-config':
         specifier: workspace:*
@@ -45,21 +45,21 @@ importers:
         specifier: 5.4.5
         version: 5.4.5
 
-  packages/anvil-testcontainers:
+  packages/chainfile-foundry:
+    devDependencies:
+      '@chainfile/testcontainers':
+        specifier: ^0.8.0
+        version: 0.8.0
+
+  packages/foundry-testcontainers:
     dependencies:
       testcontainers:
         specifier: ^10.9.0
         version: 10.9.0
     devDependencies:
       viem:
-        specifier: ^2.14.2
+        specifier: ^2.16.0
         version: 2.16.0(typescript@5.4.5)
-
-  packages/chainfile-anvil:
-    devDependencies:
-      '@chainfile/testcontainers':
-        specifier: ^0.8.0
-        version: 0.8.0
 
   workspace/eslint-config:
     devDependencies:

@@ -58,8 +58,8 @@ importers:
         version: 10.9.0
     devDependencies:
       viem:
-        specifier: ^2.16.0
-        version: 2.16.0(typescript@5.4.5)
+        specifier: ^2.16.2
+        version: 2.16.2(typescript@5.4.5)
 
   workspace/eslint-config:
     devDependencies:
@@ -2568,8 +2568,8 @@ packages:
     resolution: {integrity: sha512-/EH/sDgxU2eGxajKdwLCDmQ4FWq+kpi3uCmBGpw1xJtnAxEjlD8j8PEiGWpCIMIs3ciNAgH0d3TTJiUkYzyZjA==}
     engines: {node: '>=10.12.0'}
 
-  viem@2.16.0:
-    resolution: {integrity: sha512-qXakKfshaDOiQFgb3MgROKDa4bfr095GMUqrD2WN6UMdzH7WtlAYJ65vnrpoXpny9jXAyNoirEJeBBUF9KFNIQ==}
+  viem@2.16.2:
+    resolution: {integrity: sha512-qor3v1cJFR3jcPtcJxPbKfKURAH2agNf2IWZIaSReV6teNLERiu4Sr7kbqpkIeTAEpiDCVQwg336M+mub1m+pg==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -5608,7 +5608,7 @@ snapshots:
       '@types/istanbul-lib-coverage': 2.0.6
       convert-source-map: 2.0.0
 
-  viem@2.16.0(typescript@5.4.5):
+  viem@2.16.2(typescript@5.4.5):
     dependencies:
       '@adraffy/ens-normalize': 1.10.0
       '@noble/curves': 1.2.0
